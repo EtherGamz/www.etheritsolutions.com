@@ -28,6 +28,7 @@ const LandingPage = () => {
           />
           <nav className="dark-nav">
             <a href="#about" className="dark-nav-link">About</a>
+            <a href="#team" className="dark-nav-link">Team</a>
             <a href="#battlefront" className="dark-nav-link">Battlefront</a>
             <a href="#vision" className="dark-nav-link">Vision</a>
             <a href="#contact" className="dark-nav-link">Contact</a>
@@ -37,6 +38,12 @@ const LandingPage = () => {
 
       {/* Hero Section */}
       <section id="hero" className="hero-section">
+        <div 
+          className="hero-background"
+          style={{
+            backgroundImage: `url('https://customer-assets.emergentagent.com/job_ether-cinematic/artifacts/r26wmegh_Environment%202.png')`
+          }}
+        ></div>
         <div className="hero-content">
           <h1 className="hero-title">
             AAA Mobile Warfare.<br />Built for the Next Billion Players.
@@ -146,8 +153,59 @@ const LandingPage = () => {
 
       {/* Game Showcase */}
       <section id="showcase" className="showcase-section">
+        <div 
+          className="showcase-background"
+          style={{
+            backgroundImage: `url('https://customer-assets.emergentagent.com/job_ether-cinematic/artifacts/vwp4ux4e_Environment%203.png')`
+          }}
+        ></div>
         <div className="showcase-overlay">
           <h2 className="showcase-text">Console-Level Experience. Mobile First.</h2>
+        </div>
+      </section>
+
+      {/* Game Environments Gallery */}
+      <section id="gallery" className="content-section gallery-section">
+        <div className="section-container">
+          <h2 className="section-title">Battlefront Environments</h2>
+          <p className="gallery-subtitle">AAA-quality destructible environments optimized for mobile</p>
+          <div className="gallery-grid">
+            <div className="gallery-item">
+              <img 
+                src="https://customer-assets.emergentagent.com/job_ether-cinematic/artifacts/a3m1t7kp_Environment%201.png" 
+                alt="Battlefront Environment 1"
+                className="gallery-image"
+              />
+            </div>
+            <div className="gallery-item">
+              <img 
+                src="https://customer-assets.emergentagent.com/job_ether-cinematic/artifacts/r26wmegh_Environment%202.png" 
+                alt="Battlefront Environment 2"
+                className="gallery-image"
+              />
+            </div>
+            <div className="gallery-item">
+              <img 
+                src="https://customer-assets.emergentagent.com/job_ether-cinematic/artifacts/vwp4ux4e_Environment%203.png" 
+                alt="Battlefront Environment 3"
+                className="gallery-image"
+              />
+            </div>
+            <div className="gallery-item">
+              <img 
+                src="https://customer-assets.emergentagent.com/job_ether-cinematic/artifacts/pzf1k3rt_Environment%204.png" 
+                alt="Battlefront Environment 4"
+                className="gallery-image"
+              />
+            </div>
+            <div className="gallery-item">
+              <img 
+                src="https://customer-assets.emergentagent.com/job_ether-cinematic/artifacts/n0s9gzce_Environment%205.png" 
+                alt="Battlefront Environment 5"
+                className="gallery-image"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
