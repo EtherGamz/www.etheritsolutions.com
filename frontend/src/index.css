@@ -12,6 +12,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     background: #0B0F14;
     color: #FFFFFF;
+    text-rendering: optimizeLegibility;
 }
 
 code {

@@ -149,18 +149,23 @@
 .hero-title {
   font-family: 'Bebas Neue', 'Anton', 'Oswald', sans-serif;
   font-size: 82px;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1.05;
   letter-spacing: 1.5px;
   color: #FFFFFF;
   margin-bottom: 32px;
   text-transform: uppercase;
-  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.6);
+  text-shadow: 
+    0 3px 25px rgba(0, 0, 0, 0.8),
+    0 0 15px rgba(255, 255, 255, 0.08);
   background: linear-gradient(180deg, #FFFFFF 0%, #E5E7EB 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   will-change: transform;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 .hero-subtitle {
@@ -186,7 +191,7 @@
 
 /* Buttons */
 .btn-primary {
-  background: var(--brand-primary);
+  background: #FFFFFF;
   color: #000000;
   border: none;
   border-radius: 0px;
@@ -202,11 +207,15 @@
   letter-spacing: 0.5px;
   font-family: 'Inter', 'Manrope', sans-serif;
   will-change: transform;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .btn-hover-effect:hover {
+  background: #22C55E;
+  color: #FFFFFF !important;
   transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4), 0 8px 24px rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 20px rgba(34, 197, 94, 0.4), 0 8px 24px rgba(34, 197, 94, 0.15);
 }
 
 .btn-primary:active {
@@ -215,8 +224,8 @@
 
 .btn-secondary {
   background: transparent;
-  color: var(--text-primary);
-  border: 1px solid var(--border-medium);
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 0px;
   padding: 16px 32px;
   font-size: 16px;
@@ -230,11 +239,14 @@
   letter-spacing: 0.5px;
   font-family: 'Inter', 'Manrope', sans-serif;
   will-change: transform;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .btn-hover-effect-secondary:hover {
   background: rgba(255, 255, 255, 0.1);
-  border-color: var(--text-primary);
+  color: #FFFFFF !important;
+  border-color: rgba(255, 255, 255, 0.6);
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
   transform: translateY(-2px);
 }
