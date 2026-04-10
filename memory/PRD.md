@@ -24,17 +24,20 @@ Build a high-quality, premium single-page website (landing-page style) for "Ethe
 - Cinematic, AAA studio feel
 - Mobile-first responsive design
 
-### Content Sections
-1. Hero Section - Main headline with CTAs
+### Content Sections (Updated)
+1. Hero Section - Main headline with CTAs and Battlefront environment background
 2. About Section - Company stats (12+ years, 25+ games, 3 awards)
-3. Market Insight - 65% of players left out statistic
-4. Battlefront Product - Main game showcase with features
-5. Game Showcase - Full-width cinematic section
-6. Competitive Edge - Accessibility and scale messaging
-7. Technology - Engine-led development
-8. Vision - Company mission
-9. Final CTA - Contact information with emails
-10. Footer - Logo and copyright
+3. Team Section - Leadership profiles with photos
+4. Market Insight - 65% of players left out statistic
+5. Battlefront Product - Main game showcase with features
+6. Gameplay Preview - 4 animated GIFs showing real combat
+7. Game Showcase - Full-width cinematic section with environment background
+8. Game Environments Gallery - 5 static environment screenshots
+9. Competitive Edge - Accessibility and scale messaging
+10. Technology - Engine-led development
+11. Vision - Company mission
+12. Final CTA - Contact information with emails
+13. Footer - Logo and copyright
 
 ### Technical Requirements
 - Single-page application (no routing)
@@ -103,6 +106,28 @@ Build a high-quality, premium single-page website (landing-page style) for "Ethe
   - All nav links use smooth scroll
   - Updated navigation structure
 
+### ✅ Phase 3: Gameplay GIFs Integration
+**Date**: December 2025
+
+**Completed Features**:
+- **Gameplay Preview Section**: New "Experience Battlefront in Action" section
+  - Displays 4 gameplay GIF animations
+  - 2x2 grid layout with square aspect ratio
+  - Shows real-time combat, weapons, physics, and destruction
+  - Hover effects with border highlight and elevation
+  - Positioned strategically after Battlefront features section
+  
+- **CTA Update**:
+  - Changed Battlefront section CTA from "View Game" to "View Gameplay"
+  - Button smoothly scrolls to gameplay section
+  - Better user journey flow
+
+- **Visual Impact**:
+  - Animated GIFs bring the page to life
+  - Showcases AAA-quality mobile graphics in motion
+  - Demonstrates fast-paced combat and physics
+  - Highlights console-level experience on mobile
+
 **Design Adherence**:
 - Followed dark-theme design guidelines strictly
 - No prohibited gradients or colors
@@ -121,8 +146,9 @@ Build a high-quality, premium single-page website (landing-page style) for "Ethe
 
 **Assets Integrated**:
 - Ether Games logo (header and footer)
-- Team photos: Gokul, Sharath, Vishnu, Abhay
-- Battlefront environments (5 images): Hero background, Showcase background, Gallery section
+- Team photos: Gokul (CEO), Sharath (COO), Vishnu (Unity Programmer), Abhay (Technical Artist)
+- Battlefront environments (5 static images): Hero background, Showcase background, Gallery section
+- Battlefront gameplay GIFs (4 animated): Gameplay preview section showing real-time combat
 
 ## Prioritized Backlog
 

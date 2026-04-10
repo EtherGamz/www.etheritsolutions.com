@@ -143,10 +143,48 @@ const LandingPage = () => {
           </div>
 
           <div className="cta-center">
-            <Button className="btn-primary" onClick={() => document.getElementById('showcase').scrollIntoView({ behavior: 'smooth' })}>
-              View Game
+            <Button className="btn-primary" onClick={() => document.getElementById('gameplay').scrollIntoView({ behavior: 'smooth' })}>
+              View Gameplay
               <ChevronRight size={20} />
             </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Gameplay Preview Section */}
+      <section id="gameplay" className="content-section gameplay-section">
+        <div className="section-container">
+          <h2 className="section-title">Experience Battlefront in Action</h2>
+          <p className="gameplay-subtitle">Intense mobile combat with AAA-quality graphics and physics</p>
+          <div className="gameplay-grid">
+            <div className="gameplay-item">
+              <img 
+                src="https://customer-assets.emergentagent.com/job_ether-cinematic/artifacts/m8rcwh9h_BF%20-%20Gameplay.gif" 
+                alt="Battlefront Gameplay 1"
+                className="gameplay-gif"
+              />
+            </div>
+            <div className="gameplay-item">
+              <img 
+                src="https://customer-assets.emergentagent.com/job_ether-cinematic/artifacts/dyjww2tj_BF%20Gameplay%203.gif" 
+                alt="Battlefront Gameplay 2"
+                className="gameplay-gif"
+              />
+            </div>
+            <div className="gameplay-item">
+              <img 
+                src="https://customer-assets.emergentagent.com/job_ether-cinematic/artifacts/x3l9awc4_BF%20-%20Gameplay%204.gif" 
+                alt="Battlefront Gameplay 3"
+                className="gameplay-gif"
+              />
+            </div>
+            <div className="gameplay-item">
+              <img 
+                src="https://customer-assets.emergentagent.com/job_ether-cinematic/artifacts/zvepr56h_BF%20Gameplay.gif" 
+                alt="Battlefront Gameplay 4"
+                className="gameplay-gif"
+              />
+            </div>
           </div>
         </div>
       </section>
