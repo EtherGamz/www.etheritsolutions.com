@@ -294,7 +294,7 @@ const LandingPage = () => {
           }}
         ></div>
         <div className="showcase-overlay">
-          <h2 className="showcase-text">Console-Level Experience. Mobile First.</h2>
+          <h2 className="showcase-text">Modern Combat. Rebuilt for Mobile.</h2>
         </div>
       </section>
 
