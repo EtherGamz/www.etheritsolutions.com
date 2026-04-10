@@ -200,7 +200,14 @@ const LandingPage = () => {
 
       {/* Battlefront Product Section */}
       <section id="battlefront" className="content-section battlefront-section fade-in-section">
-        <div className="section-container">
+        <div 
+          className="battlefront-background"
+          style={{
+            backgroundImage: `url('https://customer-assets.emergentagent.com/job_ether-cinematic/artifacts/a3m1t7kp_Environment%201.png')`
+          }}
+        ></div>
+        <div className="battlefront-overlay"></div>
+        <div className="section-container battlefront-content">
           <div className="battlefront-header">
             <h2 className="battlefront-title">Battlefront</h2>
             <p className="battlefront-tagline">
