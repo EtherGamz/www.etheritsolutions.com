@@ -106,7 +106,7 @@ const LandingPage = () => {
           <h2 className="section-title">Building High-Quality Mobile Experiences Since 2013</h2>
           <div className="stats-grid">
             <div className="stat-card">
-              <Trophy className="stat-icon" size={32} />
+              <Zap className="stat-icon" size={32} />
               <h3 className="stat-number">12+</h3>
               <p className="stat-label">Years Experience</p>
             </div>
@@ -116,7 +116,7 @@ const LandingPage = () => {
               <p className="stat-label">Games Launched</p>
             </div>
             <div className="stat-card">
-              <Zap className="stat-icon" size={32} />
+              <Trophy className="stat-icon" size={32} />
               <h3 className="stat-number">3</h3>
               <p className="stat-label">Global Awards</p>
             </div>
