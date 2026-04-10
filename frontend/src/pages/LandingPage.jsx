@@ -211,7 +211,7 @@ const LandingPage = () => {
           <div className="battlefront-header">
             <h2 className="battlefront-title">Battlefront</h2>
             <p className="battlefront-tagline">
-              A fast-paced, AAA-style mobile shooter delivering intense frontline combat in short, accessible sessions.
+              A fast-paced mobile shooter delivering intense frontline combat in short, accessible sessions.
             </p>
           </div>
           
@@ -251,7 +251,7 @@ const LandingPage = () => {
       <section id="gameplay" className="content-section gameplay-section">
         <div className="section-container">
           <h2 className="section-title">Experience Battlefront in Action</h2>
-          <p className="gameplay-subtitle">Intense mobile combat with AAA-quality graphics and physics</p>
+          <p className="gameplay-subtitle">Intense mobile combat powered by realistic visuals and fluid physics</p>
           <div className="gameplay-grid">
             <div className="gameplay-item">
               <img 
@@ -302,7 +302,7 @@ const LandingPage = () => {
       <section id="gallery" className="content-section gallery-section">
         <div className="section-container">
           <h2 className="section-title">Battlefront Environments</h2>
-          <p className="gallery-subtitle">AAA-quality destructible environments optimized for mobile</p>
+          <p className="gallery-subtitle">Dynamic, destructible environments built for mobile devices</p>
           <div className="gallery-grid">
             <div className="gallery-item">
               <img 
@@ -391,11 +391,11 @@ const LandingPage = () => {
       {/* Vision Section */}
       <section id="vision" className="content-section vision-section">
         <div className="section-container">
-          <h2 className="section-title">Building the Future of Mobile Shooter Gaming</h2>
+          <h2 className="section-title">We're Redefining Mobile Shooters</h2>
           <p className="vision-text">
-            We're on a mission to democratize AAA gaming experiences for the next billion mobile players. 
-            By combining cutting-edge technology with accessible design, we're creating shooters that deliver 
-            console-quality combat without the barriers of traditional titles.
+            We're on a mission to bring high-quality, immersive shooter experiences to the next billion mobile players. 
+            By combining advanced technology with accessible design, we're building games that deliver intense, responsive 
+            combat experiences optimized for mobile.
           </p>
         </div>
       </section>
