@@ -128,6 +128,56 @@ Build a high-quality, premium single-page website (landing-page style) for "Ethe
   - Demonstrates fast-paced combat and physics
   - Highlights console-level experience on mobile
 
+### ✅ Phase 4: AAA Cinematic Animations
+**Date**: December 2025
+
+**Completed Features**:
+- **Hero Cinematic Entry**: Staggered fade-in animations
+  - Background: 1.2s fade-in
+  - Headline: fade-in + upward motion (0.8s, delay 0.2s)
+  - Subtext: fade-in (0.8s, delay 0.4s)
+  - Buttons: fade-in + scale (0.6s, delay 0.6s)
+  
+- **Parallax Background Effect**:
+  - Subtle mouse-based parallax (8-12px movement range)
+  - Inverse movement to cursor direction
+  - Desktop only (disabled on mobile)
+  - GPU-accelerated transforms
+  
+- **Headline Breathing Animation**:
+  - Subtle scale effect (1 → 1.01 → 1)
+  - 5-second loop with ease-in-out
+  - Creates depth and life
+  
+- **Button Hover Effects**:
+  - Primary: Scale 1.05 + white glow shadow
+  - Secondary: Border glow + background brighten
+  - 0.25s smooth transitions
+  
+- **Navbar Scroll Interaction**:
+  - Darkens with glass effect on scroll
+  - Enhanced backdrop blur (8px → 16px)
+  - Smooth shadow transition
+  
+- **Navigation Link Hovers**:
+  - Underline animation (left → right, 0.3s)
+  - Color transition on hover
+  
+- **Scroll-Based Fade-ins**:
+  - Sections fade-in when 20% visible
+  - Slide-up + opacity transition (0.6s)
+  - Applied to About, Team, Market, Battlefront sections
+  
+- **Performance Optimizations**:
+  - GPU-friendly transforms only (transform, opacity)
+  - Will-change hints for animated elements
+  - Lightweight CSS animations
+  
+- **Mobile Adaptations**:
+  - Parallax disabled on mobile
+  - Animation durations reduced by 20%
+  - Simplified animations for performance
+
 **Design Adherence**:
 - Followed dark-theme design guidelines strictly
 - No prohibited gradients or colors

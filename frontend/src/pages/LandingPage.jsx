@@ -1,8 +1,11 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { ChevronRight, Zap, Users, Trophy, Target, Cpu, Rocket } from 'lucide-react';
 import { Button } from '../components/ui/button';
 
 const LandingPage = () => {
+  const [scrolled, setScrolled] = useState(false);
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
   useEffect(() => {
     // Smooth scroll behavior
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -14,12 +17,44 @@ const LandingPage = () => {
         }
       });
     });
+
+    // Navbar scroll effect
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+
+      // Scroll-based fade-in for sections
+      const sections = document.querySelectorAll('.fade-in-section');
+      sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        const isVisible = rect.top < window.innerHeight * 0.8;
+        if (isVisible) {
+          section.classList.add('is-visible');
+        }
+      });
+    };
+
+    // Parallax effect (desktop only)
+    const handleMouseMove = (e) => {
+      if (window.innerWidth > 768) {
+        const x = (e.clientX / window.innerWidth - 0.5) * 12;
+        const y = (e.clientY / window.innerHeight - 0.5) * 12;
+        setMousePosition({ x: -x, y: -y });
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('mousemove', handleMouseMove);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('mousemove', handleMouseMove);
+    };
   }, []);
 
   return (
     <div className="landing-page">
       {/* Fixed Header */}
-      <header className="dark-header">
+      <header className={`dark-header ${scrolled ? 'scrolled' : ''}`}>
         <div className="header-content">
           <img 
             src="https://customer-assets.emergentagent.com/job_bfb61817-680c-4d02-bc52-432a00de53ee/artifacts/ujfvd9xc_ETHER%20GAMES_V2.png" 
@@ -39,24 +74,25 @@ const LandingPage = () => {
       {/* Hero Section */}
       <section id="hero" className="hero-section">
         <div 
-          className="hero-background"
+          className="hero-background hero-bg-animate"
           style={{
-            backgroundImage: `url('https://customer-assets.emergentagent.com/job_ether-cinematic/artifacts/r26wmegh_Environment%202.png')`
+            backgroundImage: `url('https://customer-assets.emergentagent.com/job_ether-cinematic/artifacts/r26wmegh_Environment%202.png')`,
+            transform: `translate(${mousePosition.x}px, ${mousePosition.y}px)`
           }}
         ></div>
         <div className="hero-content">
-          <h1 className="hero-title">
+          <h1 className="hero-title hero-title-animate">
             Modern Warfare — Reimagined for Mobile
           </h1>
-          <p className="hero-subtitle">
+          <p className="hero-subtitle hero-subtitle-animate">
             Ether Games is building high-quality hybrid-casual shooter experiences designed for accessibility, retention, and global scale.
           </p>
-          <div className="hero-buttons">
-            <Button className="btn-primary" onClick={() => document.getElementById('battlefront').scrollIntoView({ behavior: 'smooth' })}>
+          <div className="hero-buttons hero-buttons-animate">
+            <Button className="btn-primary btn-hover-effect" onClick={() => document.getElementById('battlefront').scrollIntoView({ behavior: 'smooth' })}>
               Explore Battlefront
               <ChevronRight size={20} />
             </Button>
-            <Button className="btn-secondary" onClick={() => document.getElementById('vision').scrollIntoView({ behavior: 'smooth' })}>
+            <Button className="btn-secondary btn-hover-effect-secondary" onClick={() => document.getElementById('vision').scrollIntoView({ behavior: 'smooth' })}>
               Our Vision
             </Button>
           </div>
@@ -65,7 +101,7 @@ const LandingPage = () => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="content-section">
+      <section id="about" className="content-section fade-in-section">
         <div className="section-container">
           <h2 className="section-title">Building High-Quality Mobile Experiences Since 2013</h2>
           <div className="stats-grid">
@@ -89,7 +125,7 @@ const LandingPage = () => {
       </section>
 
       {/* Team Section */}
-      <section id="team" className="content-section team-section">
+      <section id="team" className="content-section team-section fade-in-section">
         <div className="section-container">
           <h2 className="section-title">Meet the Team</h2>
           <div className="team-grid">
@@ -142,7 +178,7 @@ const LandingPage = () => {
       </section>
 
       {/* Market Insight Section */}
-      <section id="market" className="content-section insight-section">
+      <section id="market" className="content-section insight-section fade-in-section">
         <div className="section-container">
           <h2 className="section-title">65% of Players Are Left Out of Shooter Games</h2>
           <div className="insight-grid">
@@ -163,7 +199,7 @@ const LandingPage = () => {
       </section>
 
       {/* Battlefront Product Section */}
-      <section id="battlefront" className="content-section battlefront-section">
+      <section id="battlefront" className="content-section battlefront-section fade-in-section">
         <div className="section-container">
           <div className="battlefront-header">
             <h2 className="battlefront-title">Battlefront</h2>
