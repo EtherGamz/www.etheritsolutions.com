@@ -46,7 +46,7 @@ const LandingPage = () => {
         ></div>
         <div className="hero-content">
           <h1 className="hero-title">
-            AAA Mobile Warfare.<br />Built for the Next Billion Players.
+            Modern Warfare — Reimagined for Mobile
           </h1>
           <p className="hero-subtitle">
             Ether Games is building high-quality hybrid-casual shooter experiences designed for accessibility, retention, and global scale.
@@ -83,6 +83,59 @@ const LandingPage = () => {
               <Zap className="stat-icon" size={32} />
               <h3 className="stat-number">3</h3>
               <p className="stat-label">Global Awards</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Team Section */}
+      <section id="team" className="content-section team-section">
+        <div className="section-container">
+          <h2 className="section-title">Meet the Team</h2>
+          <div className="team-grid">
+            <div className="team-card">
+              <div className="team-image-wrapper">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_ether-cinematic/artifacts/v9tk3eti_Gokul.jpeg" 
+                  alt="Gokul Elayidath"
+                  className="team-image"
+                />
+              </div>
+              <h3 className="team-name">Gokul Elayidath</h3>
+              <p className="team-role">CEO</p>
+            </div>
+            <div className="team-card">
+              <div className="team-image-wrapper">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_ether-cinematic/artifacts/e1mrmr4j_Sharath.jpeg" 
+                  alt="Sharath Mohan"
+                  className="team-image"
+                />
+              </div>
+              <h3 className="team-name">Sharath Mohan</h3>
+              <p className="team-role">COO</p>
+            </div>
+            <div className="team-card">
+              <div className="team-image-wrapper">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_ether-cinematic/artifacts/hdgjcvc9_Vishnu.png" 
+                  alt="Vishnu"
+                  className="team-image"
+                />
+              </div>
+              <h3 className="team-name">Vishnu</h3>
+              <p className="team-role">Unity Programmer</p>
+            </div>
+            <div className="team-card">
+              <div className="team-image-wrapper">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_ether-cinematic/artifacts/ppyv8gca_Abhay.jpeg" 
+                  alt="Abhay"
+                  className="team-image"
+                />
+              </div>
+              <h3 className="team-name">Abhay</h3>
+              <p className="team-role">Technical Artist / Generalist</p>
             </div>
           </div>
         </div>

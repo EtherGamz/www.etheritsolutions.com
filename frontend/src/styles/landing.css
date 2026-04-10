@@ -1,5 +1,5 @@
-/* Import KodeMono font */
-@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400;500;600;700&display=swap');
+/* Import AAA-Quality Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Anton&family=Oswald:wght@600;700&family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap');
 
 /* CSS Variables - Dark Theme */
 :root {
@@ -124,22 +124,30 @@
 }
 
 .hero-title {
-  font-size: 72px;
+  font-family: 'Bebas Neue', 'Anton', 'Oswald', sans-serif;
+  font-size: 82px;
   font-weight: 700;
-  line-height: 1.1;
-  letter-spacing: -1.5px;
-  color: var(--text-primary);
+  line-height: 1.05;
+  letter-spacing: 1.5px;
+  color: #FFFFFF;
   margin-bottom: 32px;
   animation: fadeInUp 0.8s ease-out;
+  text-transform: uppercase;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.6);
+  background: linear-gradient(180deg, #FFFFFF 0%, #E5E7EB 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .hero-subtitle {
+  font-family: 'Inter', 'Manrope', sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 1.6;
-  color: var(--text-muted);
+  color: #9CA3AF;
   margin-bottom: 48px;
-  max-width: 700px;
+  max-width: 600px;
   margin-left: auto;
   margin-right: auto;
   animation: fadeInUp 0.8s ease-out 0.2s both;
@@ -169,7 +177,7 @@
   align-items: center;
   gap: 8px;
   letter-spacing: 0.5px;
-  font-family: 'Kode Mono', monospace;
+  font-family: 'Inter', 'Manrope', sans-serif;
 }
 
 .btn-primary:hover {
@@ -193,7 +201,7 @@
   align-items: center;
   gap: 8px;
   letter-spacing: 0.5px;
-  font-family: 'Kode Mono', monospace;
+  font-family: 'Inter', 'Manrope', sans-serif;
 }
 
 .btn-secondary:hover {
@@ -719,7 +727,7 @@
 /* Responsive Design */
 @media (max-width: 1024px) {
   .hero-title {
-    font-size: 56px;
+    font-size: 64px;
   }
   
   .section-title {
@@ -750,7 +758,8 @@
   }
   
   .hero-title {
-    font-size: 40px;
+    font-size: 48px;
+    letter-spacing: 1px;
   }
   
   .hero-subtitle {
@@ -827,7 +836,8 @@
 
 @media (max-width: 480px) {
   .hero-title {
-    font-size: 32px;
+    font-size: 36px;
+    letter-spacing: 0.8px;
   }
   
   .section-title {
