@@ -209,7 +209,11 @@ const LandingPage = () => {
         <div className="battlefront-overlay"></div>
         <div className="section-container battlefront-content">
           <div className="battlefront-header">
-            <h2 className="battlefront-title">Battlefront</h2>
+            <img 
+              src="https://customer-assets.emergentagent.com/job_ether-cinematic/artifacts/e39qnr35_Battle_Front_Title.png"
+              alt="Battlefront"
+              className="battlefront-logo-image"
+            />
             <p className="battlefront-tagline">
               A fast-paced mobile shooter delivering intense frontline combat in short, accessible sessions.
             </p>
